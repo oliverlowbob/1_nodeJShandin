@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Restul API</title>
+
+    <style>
+        img {
+         width: 100%;
+        height: auto;
+}
+body {
+        background-color: linen;
+        text-align: center;
+}
+
+
+    </style>
+
+
+  </head>
+  <body>
+    <h1>Restul API</h1>
+
+    <b>What is a Restful API?</b>
+    <br>
+    <p>A Restful API is a service where you can request, upload, delete and create data. 
+        <br>
+        It's important to notice, that when you request an object from a database for example, you don't get that exact object, 
+        <br>
+        but a state of the object.
+        <br>
+        Underneath is a picture from wikipedia, which explains the CRUD you can do via get an post requests.
+    </p>
+
+    <img src="../images/restapi.png">
+
+    <p>Furthermore, I would like to demonstrate how to read from a list of objects, which is located in the app.js file</p>
+
+    <a href="/devices">Get all devices</a>
+    <br>
+    <a href="/devices/1">Get device 1</a>
+    <br>
+    <p>If you wish to peform the update option on a device, you can do it through postman, as shown in the picture</p>
+    <img src="../images/putrequest.png">
+    <p>Furthermore, if you wish to delete a device, you can also do that through postman, as shown in the picture</p>
+    <img src="../images/deleterequest.png">
+
+
+
+    <form action="/">
+        <input type="submit" value="Back" />
+    </form>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

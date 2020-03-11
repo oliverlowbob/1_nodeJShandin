@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: linen;
+            text-align: center;
+}
+ul {
+    width: 20%;
+    margin: auto;
+    list-style-type: circle;
+    list-style-position: outside;
+
+
+}
+
+    </style>
+    <title>NodeJS Basics</title>
+  </head>
+  <body>
+    <h1>NodeJS Basics</h1>
+
+    <b>What is NodeJS?</b>
+    <br>
+    <div>NodeJS is basically a way of running JavaScript code. Before Node, JavaScript could only be applied to web browsers. By integrating a JavaScript engine (Chrome V8) with C++, the JavaScript code can now be applied outside browsers.
+
+        Node is ideal for building highly scalable, data-intensive backend & real-time apps. 
+        
+        Being great for prototyping & agile gives Node an advantage over the alternatives, such as Django. Node is fast & used world-wide. 
+        
+        Source code will also be more clean & consistent, as there is JavaScript  in both on the frontend & backend.
+
+        Note that Node is not a programming language or a framwork. It's a runtime enviroment for execution JavaScript
+    </div>
+
+    <br>
+    <b>What do you use Node for?</b>
+    <ul>
+        <li>Api</li>
+        <li>Webiste</li>
+        <li>Standalone software</li>
+        <li>Servers</li>
+        <li>Commandline programs</li>
+        <li>Scripts</li>
+        <li>Interfaces</li>
+      </ul>
+    
+    <p>To initiate npm, which is the world largest software registry, type npm init</p>
+    <a href="https://docs.npmjs.com/about-npm/">More info about npm can be found here</a>
+    <p>To escape Node in terminal press CTRL + c twice</p>
+    <p>To run a file with Node type node **file** in the terminal</p>
+    <p>Methods in node end with ()</p>
+    <p>Attributes don't have paranthesis at the end</p>
+    <p>To create a variable type var/let/const **variablename*</p>
+    <p>const is constant, let and var is changing.</p>
+    <p>var is function scoped, and let is block scoped</p>
+    <p>Remember to use === when checking, to peform a hard check (otherwise 1 is true and 0 is false etc)</p>
+    <p>Use commas instead of + when adding things. + will add to the String or int, while comma keeps it seperated</p>
+    <p>Even though JavaScript can execute without semicolons at the end, its still good practice to keep them.</p>
+    
+    
+    <b>Modules</b>
+    <div>Modules are a fundamental part of NodeJS. Some modules are available globally, which means that we don't have to do anything to use them. In order to import modules, the function, *require()* is used in the app.js file.</div> 
+    <br>
+    <p>An example of this is the console.log()</p>
+    
+    <b>Objects</b>
+    <p>Json objects</p>
+    <p>Key value pair, seperated by commas</p>
+    <p>{<br>
+        "key": "values",<br> 
+        "key2": {"anotherkey": 23},  <br>
+        }</p>
+    
+    <p>value is a String, but could be any datatype. key2 is a nested object.</p>
+    
+    <b>JavaScript Object</b>
+    <p>var myObject = {}</p>
+
+    <h2>Packages</h2>
+    <p>First, you need an empty package.json file in ur directory</p>
+    <p>To install a package, go to the right folder in the terminal, and write npm install **packagename**</p>
+    <div>Express is a library for building API from npm.
+        Express.js is a node web application framework, which is made for building: single-page, multi-page* & hybrid web applications. Is is the standard Server Framework for Node.js.</div>
+    <p>To install express, write npm install express</p>
+    <form action="/">
+        <input type="submit" value="Back" />
+    </form>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
