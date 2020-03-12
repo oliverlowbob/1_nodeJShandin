@@ -20,6 +20,10 @@ ul {
 
 
 }
+img {
+         width: 40%;
+        height: auto;
+        }
 
     </style>
     <title>NodeJS Basics</title>
@@ -56,33 +60,34 @@ ul {
     <a href="https://docs.npmjs.com/about-npm/">More info about npm can be found here</a>
     <p>To escape Node in terminal press CTRL + c twice</p>
     <p>To run a file with Node type node **file** in the terminal</p>
-    <p>Methods in node end with ()</p>
-    <p>Attributes don't have paranthesis at the end</p>
-    <p>To create a variable type var/let/const **variablename*</p>
-    <p>const is constant, let and var is changing.</p>
-    <p>var is function scoped, and let is block scoped</p>
-    <p>Remember to use === when checking, to peform a hard check (otherwise 1 is true and 0 is false etc)</p>
-    <p>Use commas instead of + when adding things. + will add to the String or int, while comma keeps it seperated</p>
-    <p>Even though JavaScript can execute without semicolons at the end, its still good practice to keep them.</p>
+    <p>You can also install nodemon, which is a tool that helps in the development-stage of an application. As soon as you write any new code, it automatically reruns the application</p>
+    <p>Be aware, that you should never use nodemon, when publishing an application</p>
+    <p>You install nodemon through the terminal with the following command: npm install -g nodemon. The -g means, its installed globally</p>
+    <p>You can also use budo, if you just want to LiveReload your html pages, as you're writing them, including CSS injections</p>
+    <p>This makes prototyping very fast and easy. To install budo: npm install budo -g</p>
+    <p>You could also just use budo one time, in which case you write npx budo index.html --live --open</p>
+    
+    
     
     
     <b>Modules</b>
     <div>Modules are a fundamental part of NodeJS. Some modules are available globally, which means that we don't have to do anything to use them. In order to import modules, the function, *require()* is used in the app.js file.</div> 
     <br>
     <p>An example of this is the console.log()</p>
+    <p>You can consider modules as a set of functions you want to include in your app</p>
+    <b>Arrow functions vs functions</b>
+    <p>Below is an example of arrow functions vs regular functions</p>
+    <p>Regular function</p>
+    <img src="../images/function.PNG">
+    <p>Arrow function</p>
+    <img src="../images/arrowfunction.PNG">
+    <div>As you can see, the arrow function is much shorter to write.</div>
+    <div>Furthermore, arrow functions don't have their own this or arguments binding. Instead, those identifiers are resolved in the lexical scope like any other variable. That means that inside an arrow function, this and arguments refer to the values of this and arguments in the environment the arrow function is defined in (i.e. "outside" the arrow function)</div>
+    <p style="font-style: italic;">The text above is taken from stackoverflow: <a href="https://stackoverflow.com/questions/34361379/are-arrow-functions-and-functions-equivalent-exchangeable">Link</a></p>
+
     
-    <b>Objects</b>
-    <p>Json objects</p>
-    <p>Key value pair, seperated by commas</p>
-    <p>{<br>
-        "key": "values",<br> 
-        "key2": {"anotherkey": 23},  <br>
-        }</p>
+
     
-    <p>value is a String, but could be any datatype. key2 is a nested object.</p>
-    
-    <b>JavaScript Object</b>
-    <p>var myObject = {}</p>
 
     <h2>Packages</h2>
     <p>First, you need an empty package.json file in ur directory</p>
@@ -90,9 +95,14 @@ ul {
     <div>Express is a library for building API from npm.
         Express.js is a node web application framework, which is made for building: single-page, multi-page* & hybrid web applications. Is is the standard Server Framework for Node.js.</div>
     <p>To install express, write npm install express</p>
+
+<br>
+
     <form action="/">
         <input type="submit" value="Back" />
     </form>
+
+
     
 
 

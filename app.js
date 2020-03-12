@@ -24,6 +24,11 @@ app.get("/devices/:id", (req, res) => {
 });
 
 
+app.get("/videos/", (req, res) =>{
+    return res.sendFile(__dirname+"/public/html/videos.html");
+});
+
+
 app.get("/", (req, res) =>{
     return res.sendFile(__dirname+"/public/html/index.html");
 });
@@ -46,6 +51,10 @@ app.get("/jquery", (req, res) =>{
 
 app.get("/basics", (req, res) =>{
     return res.sendFile(__dirname+"/public/html/basics.html");
+});
+
+app.get("/jsbasics", (req, res) =>{
+    return res.sendFile(__dirname+"/public/html/jsbasics.html");
 });
 
 app.get("/jqueryintro", (req, res) =>{

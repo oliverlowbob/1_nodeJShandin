@@ -12,7 +12,7 @@
 
     <style>
         img {
-         width: 100%;
+         width: 60%;
         height: auto;
 }
 body {
@@ -46,13 +46,17 @@ body {
     <a href="/devices">Get all devices</a>
     <br>
     <a href="/devices/1">Get device 1</a>
+    <p>The two methods, that are being executed are shown underneath. The first gets the full list of devices, while the second method requires an id for a specific device, and returns that.</p>
+    <img src="../images/getrequest.PNG">
+    <br>
+    <p>A good thing to note, is that you can acces the directory of the project like this __dirname</p>
     <br>
     <p>If you wish to peform the update option on a device, you can do it through postman, as shown in the picture</p>
     <img src="../images/putrequest.png">
     <p>Furthermore, if you wish to delete a device, you can also do that through postman, as shown in the picture</p>
     <img src="../images/deleterequest.png">
 
-
+    <br>
 
     <form action="/">
         <input type="submit" value="Back" />
